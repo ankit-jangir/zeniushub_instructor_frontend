@@ -1,0 +1,47 @@
+.avatar{
+    width:130px;
+    border-radius: 100%;
+    
+}
+.profile_list{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around   ; */
+    font-size: 15px;
+    border-top: 1px solid #2e2828;
+    padding: 18px 30px;
+    color: #303972;
+    font-family: inherit;
+
+}
+.profile_list_number{
+/* color: #a098ae; */
+font-weight: 500;
+padding-left: 100px;
+}
+.profile_portfolio {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2a2a2a;
+    position: relative;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1.2px;
+  }
+  
+  .profile_portfolio::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #6366f1, #3b82f6);
+    border-radius: 2px;
+  }
+  
+  
+
+
+  

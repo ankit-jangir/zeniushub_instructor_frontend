@@ -1,0 +1,85 @@
+/* Basic global font */
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Remove number input arrows */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Let scrollbars show when needed */
+* {
+  scrollbar-width: thin;
+  /* Firefox */
+  -ms-overflow-style: auto;
+  /* IE/Edge */
+}
+
+/* Custom scrollbar for Webkit (Chrome, Edge, Safari) */
+.custom-scrollbar {
+  scrollbar-color: #a0aec0 #f1f1f1;
+  /* For Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Scrollbar thumb (handle) */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0aec0;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+/* Scrollbar track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* ❌ Hide the default arrows (if shown in any browser) */
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+
+/* styles.css */
+.responsiveCard {
+  max-width: 40rem !important;
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  margin: 0 auto;
+  
+}
+
+@media (min-width: 640px) {
+
+  /* sm */
+  .responsiveCard {
+    max-width: 58rem !important;
+    max-height: 80vh;
+  }
+}
+
+
+/* globals.css ya tailwind.css me add karo */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE & Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
